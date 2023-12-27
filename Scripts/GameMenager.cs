@@ -9,6 +9,7 @@ public class GameMenager : MonoBehaviour
 
     void Start()
     {
+        QuizActivator.counter = 0;
         CanvasInvisible();
     }
 

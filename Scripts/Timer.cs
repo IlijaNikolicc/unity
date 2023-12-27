@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timerText;
     private float startTime;
     private float t;
-    private string minutes, seconds;
+    public string minutes, seconds;
     private bool finnished = false;
 
     void Start()
@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
         startTime = Time.time;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (finnished)
             return;
